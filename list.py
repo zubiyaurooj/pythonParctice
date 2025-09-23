@@ -1,4 +1,4 @@
-family=["Salman","Katrina","Sumair","Zubiya"]
+#family=["Salman","Katrina","Sumair","Zubiya"]
 
 # String, int and boolean data types:
 # list1 = ["apple", "banana", "cherry"]
