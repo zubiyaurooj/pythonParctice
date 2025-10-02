@@ -1,0 +1,126 @@
+# Arithmetic Operators
+#a= 29
+#b = 10
+# print("a + b =", a + b) = Addition
+#print("a - b =", a - b)  = Subtraction
+# print("a * b =", a * b) = Multiplication
+# print("a / b =", a / b) = Division
+# print("a % b =", a % b) = Modulus
+# print("a ** b =", a ** b)= Exponentiation
+# print("a // b =", a // b) = Floor Division
+
+#=========================================================================================================
+#Assignment Operators
+
+# Start with a variable
+#x = 10
+#print("Initial x =", x)   # 10
+
+# 1. += (Add and assign)
+#x += 5     # same as x = x + 5
+#print("After x += 5 :", x)  # 15
+
+# 2. -= (Subtract and assign)
+#x -= 3     # same as x = x - 3
+#print("After x -= 3 :", x)  # 12
+
+# 3. *= (Multiply and assign)
+#x *= 2     # same as x = x * 2
+#print("After x *= 2 :", x)  # 24
+
+# 4. /= (Divide and assign)
+#x /= 4     # same as x = x / 4
+#print("After x /= 4 :", x)  # 6.0
+
+# 5. //= (Floor divide and assign)
+#x //= 2    # same as x = x // 2
+#print("After x //= 2 :", x)  # 3
+
+# 6. %= (Modulus and assign)
+#x %= 2     # same as x = x % 2
+#print("After x %= 2 :", x)  # 1
+
+# 7. **= (Exponent and assign)
+#x **= 3    # same as x = x ** 3
+#print("After x **= 3 :", x)  # 1^3 = 1
+
+#============================================================================================
+
+#Comparison Operators
+
+#x = 10
+#y = 5
+#print(x == y)   # False (10 is not equal to 5)
+#print(x != y)   # True  (10 is not equal to 5)
+#print(x > y)    # True  (10 greater than 5)
+#print(x < y)    # False (10 less than 5? No)
+#print(x >= 10)  # True  (10 greater than or equal to 10)
+#print(y <= 5)   # True  (5 less than or equal to 5)
+
+#=============================================================================================================================================================================
+
+#Logical Operators
+#x = 10
+#y = 5
+
+# AND → both conditions must be True
+#print(x > 5 and y < 10)   # True (both are True)
+#print(x > 5 and y > 10)   # False (second is False)
+
+# OR → at least one condition must be True
+#print(x > 5 or y > 10)    # True (first is True)
+#print(x < 5 or y > 10)    # False (both False)
+
+# NOT → reverses the condition
+#print(not (x > 5))        # False (x>5 is True, so not True → False)
+#print(not (x < 5))        # True (x<5 is False, so not False → True)
+
+#=============================================================================================================================================================
+ #Identity operators
+#x = [1, 2, 3]
+#y = x           # y points to the same list as x
+#z = [1, 2, 3]   # z is a different list with same values
+#print(x is y)       # True (same object)
+#print(x is z)       # False (different object even though values same)
+#print(x == z)       # True (values are equal but objects differ)
+#print(x is not z)   # True (they are not the same object)
+
+#======================================================================================================================================================================================
+#Membership Operators
+#x = ["apple", "banana"]
+#print("banana" in x)
+
+# returns True because a sequence with the value "banana" is in the list
+#x = ["apple", "banana"]
+#print("pineapple" not in x)
+
+# returns True because a sequence with the value "pineapple" is not in the list
+
+#==========================================================================================================================================================================================================================
+
+#Bitwise Operators
+
+x = 5   # in binary: 0101
+y = 3   # in binary: 0011
+
+#AND &
+#print(x & y) =  1  (0101 & 0011 = 0001)
+
+#OR |
+# print(x | y) = 7  (0101 | 0011 = 0111)
+
+#XOR ^
+#print(x ^ y)  # 6  (0101 ^ 0011 = 0110)
+
+#NOT ~
+#print(~x)  # -6  (bitwise complement of 5)
+
+#~x = -(x+1) in Python because of how negative numbers are stored.
+
+#Left Shift <<
+#print(x << 1)  # 10 (0101 << 1 = 1010)
+#Shifts all bits to the left by 1, adds a 0 at the right.
+
+#Right Shift >>
+#print(x >> 1)  # 2  (0101 >> 1 = 0010)
+#Shifts all bits to the right by 1, discards the rightmost bit
