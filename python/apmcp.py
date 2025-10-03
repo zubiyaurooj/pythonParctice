@@ -38,4 +38,13 @@ time.sleep(3)
 element = driver.find_element("xpath",'//td[@colspan="7"]')
 print(element.text)
 
+time.sleep(5)
+text = driver.find_element("xpath","(//td[text()='PIGEON PEA (Tur)'])[1]").text
+print(text)
+
+
+# ---- Save the text into a file ----
+with open("crop.docx", "w", encoding="utf-8") as f:
+    f.write(text)
+
 input("Enter")
